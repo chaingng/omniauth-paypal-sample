@@ -17,7 +17,6 @@ class SessionsController < ApplicationController
 
           @token         = auth.credentials.token;
           @refresh_token = auth.credentials.token_secret;
-          @expires_at    = auth.credentials.expires_at;
 
           render 'sessions/callback'
   end
