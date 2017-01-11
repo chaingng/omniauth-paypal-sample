@@ -1,0 +1,9 @@
+/Users/honda-takatomo/.rbenv/versions/2.2.5/bin/ruby -r ./siteconf20161024-7641-dbcdar.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
