@@ -2008,3 +2008,25 @@ Processing by SessionsController#callback as HTML
   Parameters: {"request_token"=>"AAAAAAAkjUj7lJM5I-Nv", "verification_code"=>"daAtXG5SbeLMKYimGnIWCA", "provider"=>"paypalpermissions"}
   Rendered sessions/callback.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-11 11:52:35 +0900
+Processing by SessionsController#top as HTML
+  Rendered sessions/top.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/walletables/auth/paypalpermissions" for ::1 at 2017-01-11 11:52:47 +0900
+Request[post]: https://svcs.sandbox.paypal.com/Permissions/RequestPermissions
+Response[200]: OK, Duration: 0.759s
+
+
+Started GET "/walletables/auth/paypalpermissions/callback?request_token=AAAAAAAkjUmZJh3uRyBn&verification_code=HgLeVMY6QBlkFCB23ocQcA" for ::1 at 2017-01-11 11:53:19 +0900
+Request[post]: https://svcs.sandbox.paypal.com/Permissions/GetAccessToken
+Response[200]: OK, Duration: 0.750s
+Request[post]: https://svcs.sandbox.paypal.com/Permissions/GetBasicPersonalData
+Response[200]: OK, Duration: 0.875s
+Processing by SessionsController#callback as HTML
+  Parameters: {"request_token"=>"AAAAAAAkjUmZJh3uRyBn", "verification_code"=>"HgLeVMY6QBlkFCB23ocQcA", "provider"=>"paypalpermissions"}
+  Rendered sessions/callback.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
